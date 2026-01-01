@@ -1,17 +1,44 @@
-# React + Vite
+# User Profile Cards
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A frontend project that displays user profile cards using structured user data.
+Each card presents personal details, images, engagement statistics, and follow status.
 
-Currently, two official plugins are available:
+This project focuses on **React component design**, **data-driven UI rendering**, and **clean Tailwind CSS styling**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Dynamic user profile cards built with React
+- Real profile and cover images
+- User information displayed on each card:
+  - Full name
+  - Professional title
+  - Short description (`info`)
+  - Profile image and cover image
+- Engagement statistics:
+  - Posts count
+  - Likes count
+  - Views count
+- Follow / Following status display
+- Responsive card layout using Tailwind CSS
+- Reusable and scalable component structure
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# user-profile-cards
+## 🧩 User Data Structure
+
+Each user object includes the following properties:
+
+```js
+{
+  fullName: "Aarav Sharma",
+  title: "Frontend Developer",
+  info: "Lorem ipsum dolor sit amet.",
+  profile: "profile-image-url",
+  coverImage: "cover-image-url",
+  likeCount: 1240,
+  postCount: 87,
+  viewCount: 15400,
+  followed: true
+}
